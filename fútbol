@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+using UnityEngine;
+public class PlayerController: MonoBehaviour
+{
+
+void Start ()
+{
+    rPlayer = GetComponent <Rigidbody2D>();
+}
+
+void Update ()
+{
+}
+private void FixedUpdate ()
+{
+    h= Input.GetAxisRam("Horizontal");
+    rPlayer.AddForce(Vector2.right * velocidad *h);
+}
+}
