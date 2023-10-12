@@ -10,11 +10,11 @@ public class PlayerController: MonoBehaviour
 
 private bool miraDerecha = true;
 
-void Start ()
+void Start () 
 {
     rPlayer = GetComponent <Rigidbody2D>();
 }
-
+Hola mundo 
 void Update ()
 {
 }
